@@ -1,4 +1,4 @@
-# Colossal Scifi Adventure
+# Colossal Sci-Fi Adventure
 
 # Required Software
 Python 3 is required to play Colossal SciFi Adventure. While you can technically get the game set up in any Python 3 editor
