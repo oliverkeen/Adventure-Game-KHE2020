@@ -41,8 +41,9 @@ cockpit()
 """
 
 class location:
-    def __init__(self, room, up_down, left, right, back, forward):
+    def __init__(self, room, room_n, up_down, left, right, back, forward):
         self.room = room
+        self.room_n = room_n
         self.up_down = up_down
         self.left = left
         self.right = right
@@ -64,12 +65,12 @@ loc_list = []
 8 = cockpit
 '''
 
-loc_list.append(location("medbay", "", "", "", "cafeteria", ""))
-loc_list.append(location("cafeteria", "cockpit", "medbay", "crew_quarters" , "your_quarters", "oxygen"))
-loc_list.append(location("crew_quarters", "", "", "storage", "cafeteria", "reactor"))
-loc_list.append(location("your_quarters", "", "storage", "", "cafeteria", "engine"))
-loc_list.append(location("engines", "", "", "", "your_quarters", ""))
-loc_list.append(location("storage", "", "your_quarters", "crew_quarters", "", ""))
-loc_list.append(location("reactor", "", "", "", "crew_quarters", ""))
-loc_list.append(location("oxygen", "", "", "", "cafeteria", ""))
-loc_list.append(location("cockpit", "cafeteria", "", "", "", ""))
+loc_list.append(location("medbay", "0", "", "", "", "cafeteria", ""))
+loc_list.append(location("cafeteria", "1", "cockpit", "medbay", "crew_quarters" , "your_quarters", "oxygen"))
+loc_list.append(location("crew_quarters", "2", "", "", "storage", "cafeteria", "reactor"))
+loc_list.append(location("your_quarters", "3", "", "storage", "", "cafeteria", "engine"))
+loc_list.append(location("engines", "4", "", "", "", "your_quarters", ""))
+loc_list.append(location("storage", "5", "", "your_quarters", "crew_quarters", "", ""))
+loc_list.append(location("reactor", "6", "", "", "", "crew_quarters", ""))
+loc_list.append(location("oxygen", "7", "", "", "", "cafeteria", ""))
+loc_list.append(location("cockpit", "8", "cafeteria", "", "", "", ""))
