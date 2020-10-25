@@ -1,8 +1,6 @@
-#main file
-import os
+from locations_and_items import *
+from intro_and_events import *
 
-os.system('intro_and_events.py')
-os.system('locations_and_items')
 
 intro()
 
@@ -22,18 +20,18 @@ def move():
 
 def look():
     print("look function called")
+    
+command = "puppy"
 
-while(input != quit):
+while(command != quit):
     command = input()
 
-    if(command == help):
+    if(command == "help"):
         help()
-    if(command == move):
+    if(command == "move"):
         move()
-    if(command == look):
+    if(command == "look"):
         look()
-    else:
-        print("Sorry what was that? Please reenter valid input.")
 
 
     
