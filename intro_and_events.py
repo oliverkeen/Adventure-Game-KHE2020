@@ -1,44 +1,54 @@
-#collosal scifi adventure
-#KHE 2020
+# Collosal sci-fi adventure
+# Kent Hack Enough (KHE) 2020
 
 from locations_and_items import *
 
-#intro function
+# Intro function
 def intro():
-    print('''
-Welcome to Colossal SciFi Adventure. It is the year 2720
-and your spaceship, Firebird, is deep in space far from any
-inhabited planets. You, your partner and your dog Lucy are on
-your way home from a top secret mission for the Galactic Authority.
+    # Outputs intro, asks user to choose character
+    print("Welcome to Colossal Sci-Fi Adventure! It is the year 2720, and your ship \nFirebird is deep in space, far from any inhabited planets. You, your crewmate, \nand your dog Lucy are on your way home from a top secret mission for the \nGalactic Authority. ", end = '')
 
-Which character would you like to play as? Major Valerian (male) or
-Laureline (female)?
-''')
-#pick a character and output character description
-    character = input()
+    chosen = False
+    character = ''
 
-    if(character == 'Valerian' or character == 'valerian'):
-          print("description of Valerian")
-    if(character == 'Laureline' or character == 'laureline'):
-          print("description of Laureline")
-    else:
-        print("Error. Please enter valid input.")
+    while (chosen == False):
+        character = input("Whom would you like to play as? \n\nMajor Valerian (male) or Sergeant Laureline (female)?\n")
 
-    print("You wake up and look around you.")
+        if (character == "Valerian" or character == "valerian" or character == "Major Valerian" or character == "major valerian"):
+            print("description of Valerian \n")
+            confirm = input("Play as Valerian? (Y/n)\n")
 
-    #call the your quarters function for bedroom description
+            if (confirm == "Yes" or confirm == 'Y' or confirm == "yes" or confirm == 'y'):
+                character == "Valerian"
+                chosen = True
+
+        elif (character == "Laureline" or character == "laureline" or character == "Sergeant Laureline" or character == "sergeant laureline"):
+            character = "Laureline"
+            print("Laureline is a fiesty, intelligent redhead. \n")
+            confirm = input("Play as Laureline? (Y/n)\n")
+
+            if (confirm == "Yes" or confirm == 'Y' or confirm == "yes" or confirm == 'y'):
+                character == "Laureline"
+                chosen = True
+
+        else:
+            print("Error: Please check your spelling and try again.\n")
+
+    print("\nYou wake up and take in your surroundings.")
+
+    # Call the your quarters function for bedroom description
     your_quarters()
 
-#event 1 function
+# Event 1 function
 def event1():
     print("event 1")
 
-#event 2 function
+# Event 2 function
 def function2():
     print("event 2")
 
-#event 3 function
+# Event 3 function
 def function3():
     print("event 3")
 
-#ending
+# Ending
