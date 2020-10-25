@@ -30,9 +30,9 @@ def cockpit():
     print("You are in the ship's cockpit. The hatch to the cafeteria lays below you.")
 
 class location:
-    def _init_(self, room, up_down, left, right, back, forward):
+    def __init__(self, room, up_down, left, right, back, forward):
         self.room = room
-        self.up = up
+        self.up_down = up_down
         self.left = left
         self.right = right
         self.back = back
@@ -43,8 +43,8 @@ loc_list = []
 '''
 0 = medbay
 1 = cafeteria
-2 = crew quarters
-3 = your quarters
+2 = crew_quarters
+3 = your_quarters
 4 = engines
 5 = storage
 6 = reactor
@@ -52,7 +52,6 @@ loc_list = []
 8 = cockpit
 '''
 
-.
 loc_list.append(location("medbay", "", "", "", "cafeteria", ""))
 loc_list.append(location("cafeteria", "cockpit", "medbay", "crew_quarters" , "your_quarters", "oxygen"))
 loc_list.append(location("crew_quarters", "", "", "storage", "cafeteria", "reactor"))
