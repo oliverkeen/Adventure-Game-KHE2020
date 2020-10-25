@@ -34,7 +34,8 @@ def intro():
         else:
             print("Error: Please check your spelling and try again.\n")
 
-    print("\nYou wake up and take in your surroundings.")
+    #pick_char(character) # Buggy
+    print("\nYou wake up and take in your surroundings...")
 
     # Call the your quarters function for bedroom description
     your_quarters()

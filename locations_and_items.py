@@ -1,7 +1,5 @@
 # Locations and item function descriptions
 
-
-
 def medbay():
     print("You are standing in the medbay. Behind you, a door leads back to the cafeteria.")
 
@@ -29,6 +27,19 @@ def oxygen():
 def cockpit():
     print("You are in the ship's cockpit. The hatch to the cafeteria lays below you.")
 
+"""
+### Output testing
+medbay()
+cafeteria()
+crew_quarters()
+your_quarters()
+engines()
+storage()
+reactor()
+oxygen()
+cockpit()
+"""
+
 class location:
     def __init__(self, room, up_down, left, right, back, forward):
         self.room = room
@@ -41,6 +52,7 @@ class location:
 loc_list = []
 
 '''
+# loc_list elements:
 0 = medbay
 1 = cafeteria
 2 = crew_quarters
@@ -61,16 +73,3 @@ loc_list.append(location("storage", "", "your_quarters", "crew_quarters", "", ""
 loc_list.append(location("reactor", "", "", "", "crew_quarters", ""))
 loc_list.append(location("oxygen", "", "", "", "cafeteria", ""))
 loc_list.append(location("cockpit", "cafeteria", "", "", "", ""))
-
-"""
-### Output testing
-medbay()
-cafeteria()
-crew_quarters()
-your_quarters()
-engines()
-storage()
-reactor()
-oxygen()
-cockpit()
-"""
