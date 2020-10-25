@@ -1,26 +1,41 @@
-#locations and item function descriptions
+# Locations and item function descriptions
 
 def medbay():
-    print('medbay description')
+    print("You are standing in the medbay. Behind you, a door leads back to the cafeteria.")
 
-def alt_crew_quarters():
-    print('description')
+def cafeteria(): ########### Missing in other file, needs added
+    print("You are in the middle of the cafeteria. Ahead, there is a door to the oxygen \nroom, and above you is the cockpit entrance. To your left is the medbay door, \nand to your right is the crew's quarters. Behind you, there is an entrance to \nyour personal quarters.")
 
-def your_quarters():
-    print("description")
+def crew_quarters(): ### make sure names match
+    print("You are standing in the crew's quarters. The door ahead leads to the reactor \nroom, and on your right is a storage entrance. Behind you, a door leads to the \ncafeteria.")
+
+def your_quarters(): ### make sure names match
+    print("You are in your personal quarters. The engine room lays after the door in front \nof you, and on your left is a storage entrance. A doorway to the cafeteria is \nbehind you.")
 
 def engines():
-    print('description')
+    print("You are standing in the engine room. The door behind you leads back to your \nquarters.")
 
 def storage():
-    print('description')
+    print("You are standing in storage. On your left is an entrance to your personal \nquarters, and to your right is an entrance to the crew's quarters.")
 
 def reactor():
-    print('description')
+    print("You are standing in the reactor room. Behind you, a door leads back to the \ncrew's quarters.")
 
 def oxygen():
-    print('description')
+    print("You are standing in the oxygen room. The door behind you leads back to the \ncafeteria.")
 
 def cockpit():
-    print('description')
+    print("You are in the ship's cockpit. The hatch to the cafeteria lays below you.")
 
+"""
+### Output testing
+medbay()
+cafeteria()
+crew_quarters()
+your_quarters()
+engines()
+storage()
+reactor()
+oxygen()
+cockpit()
+"""
