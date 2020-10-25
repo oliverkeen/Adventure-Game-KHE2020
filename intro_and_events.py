@@ -15,7 +15,7 @@ def intro():
         character = input("Whom would you like to play as? \n\nMajor Valerian (male) or Sergeant Laureline (female)?\n")
 
         if (character == "Valerian" or character == "valerian" or character == "Major Valerian" or character == "major valerian"):
-            print("description of Valerian \n")
+            print("Valerian is a young, dark-haired major with a majors pin and several medals of honor on his spacesuit. \n")
             confirm = input("Play as Valerian? (Y/n)\n")
 
             if (confirm == "Yes" or confirm == 'Y' or confirm == "yes" or confirm == 'y'):
@@ -24,7 +24,7 @@ def intro():
 
         elif (character == "Laureline" or character == "laureline" or character == "Sergeant Laureline" or character == "sergeant laureline"):
             character = "Laureline"
-            print("Laureline is a fiesty, intelligent redhead. \n")
+            print("Laureline is a fiesty, intelligent redhead with a sergeants pin on her spacesuit. \n")
             confirm = input("Play as Laureline? (Y/n)\n")
 
             if (confirm == "Yes" or confirm == 'Y' or confirm == "yes" or confirm == 'y'):
