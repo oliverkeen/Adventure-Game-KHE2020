@@ -81,11 +81,15 @@ loc_list = []
 '''
 
 loc_list.append(location("medbay", "0", "", "", "", "cafeteria", ""))
-loc_list.append(location("cafeteria", "1", "cockpit", "medbay", "crew_quarters" , "your_quarters", "oxygen"))
-loc_list.append(location("crew_quarters", "2", "", "", "storage", "cafeteria", "reactor"))
-loc_list.append(location("your_quarters", "3", "", "storage", "", "cafeteria", "engine"))
+loc_list.append(location("cafeteria", "1", "cockpit", "medbay", "crew_quarters",
+                         "your_quarters", "oxygen"))
+loc_list.append(location("crew_quarters", "2", "", "", "storage", "cafeteria",
+                         "reactor"))
+loc_list.append(location("your_quarters", "3", "", "storage", "", "cafeteria",
+                         "engine"))
 loc_list.append(location("engines", "4", "", "", "", "your_quarters", ""))
-loc_list.append(location("storage", "5", "", "your_quarters", "crew_quarters", "", ""))
+loc_list.append(location("storage", "5", "", "your_quarters", "crew_quarters",
+                         "", ""))
 loc_list.append(location("reactor", "6", "", "", "", "crew_quarters", ""))
 loc_list.append(location("oxygen", "7", "", "", "", "cafeteria", ""))
 loc_list.append(location("cockpit", "8", "cafeteria", "", "", "", ""))
